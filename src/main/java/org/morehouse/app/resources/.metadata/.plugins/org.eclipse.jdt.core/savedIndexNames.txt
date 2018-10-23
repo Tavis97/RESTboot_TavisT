@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/vagrant/Documents/handouts/restjersey/src/main/java/org/morehouse/app/resources/.metadata/.plugins/org.eclipse.jdt.core
+646308851.index

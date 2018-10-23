@@ -71,8 +71,15 @@ public class TodosResource {
 	// Headers:
 	//       Content-Type: application/json
 	//       Accept: application/json
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	
 	public Response createTodo(Todo todo) {
 		// Save the todo in the database
+		 
+		
+		
 		em.getTransaction().begin();
 		em.persist(todo);
 		em.getTransaction().commit();
