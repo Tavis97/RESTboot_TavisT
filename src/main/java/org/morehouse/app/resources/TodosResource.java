@@ -123,5 +123,10 @@ public class TodosResource {
         em.getTransaction().commit();
         return Response.ok().entity("row " + id + " deleted").build();
     }
+    
+    static boolean validateUpdate(Todo existing, Todo update) {
+    	return update.getAssignee() != null;
+    }
+    
 	
 }
